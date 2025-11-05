@@ -194,15 +194,43 @@ export default function Home() {
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>Salón techado</span>
+                    <span>Mesas con mantel blanco</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>Jardín amplio</span>
+                    <span>Sillas</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>Juegos infantiles</span>
+                    <span>Vaso de vidrio</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Plato base</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Juego de cubiertos</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Parrilla para calentar con alimentos con gas</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Refrigerador (22 pies)</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Juegos infantiles </span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Papel para baños</span>
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span>Parrilla para asar alimentos</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
@@ -210,7 +238,7 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>Mesas y sillas</span>
+                    <span>8 horas + 1 hora adicional (antes o después del evento)</span>
                   </li>
                 </ul>
               </CardContent>
@@ -229,7 +257,7 @@ export default function Home() {
               </div>
               <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
                 <CardTitle className="text-2xl text-amber-800">Premium</CardTitle>
-                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$5,500</CardDescription>
+                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$6,300</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-3">
@@ -239,19 +267,11 @@ export default function Home() {
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>Inflable para niños</span>
+                    <span>Mesa para 12 comensales</span>
                   </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span>Decoración básica</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Iluminación especial</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Atención personalizada</span>
+                    <span>Sillas Tiffany</span>
                   </li>
                 </ul>
               </CardContent>
