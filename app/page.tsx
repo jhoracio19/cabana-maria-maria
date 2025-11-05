@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
               <a href="#inicio">
-                <img src="/logo.jpg" alt="Cabaña María María Logo" className="h-10 w-auto" />
+                <img src="/logo.JPG" alt="Cabaña María María Logo" className="h-10 w-auto" />
               </a>
               <span className="text-2xl font-bold text-amber-800">
                 Cabaña María María
@@ -382,7 +382,7 @@ export default function Home() {
             <div>
               <div className="flex items-center gap-2 mb-4">
               <a href="#inicio">
-                <img src="/logo.jpg" alt="Cabaña María María Logo" className="h-10 w-auto" />
+                <img src="/logo.JPG" alt="Cabaña María María Logo" className="h-10 w-auto" />
               </a>
               <span className="text-2xl font-bold ">
                 Cabaña María María
