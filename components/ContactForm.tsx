@@ -4,6 +4,7 @@ import { useState } from "react"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import { sanitizeInput } from "@/utils/sanitizeInput"
 
 export function ContactForm() {
   const [name, setName] = useState("")
@@ -13,8 +14,14 @@ export function ContactForm() {
 
   function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
-    const text = `Hola, soy ${name}. Quisiera cotizar un evento (${eventType}) para el día ${date}. Mensaje: ${message}`
-    const url = `https://wa.me/2462132732?text=${encodeURIComponent(text)}`
+    const cleanName = sanitizeInput(name)
+    const cleanEvent = sanitizeInput(eventType)
+    const cleanDate = sanitizeInput(date)
+    const cleanMessage = sanitizeInput(message)
+    const text = encodeURIComponent(
+      `Hola, soy ${cleanName}. Quisiera cotizar un evento (${cleanEvent}) para el día ${cleanDate}. Mensaje: ${cleanMessage}`
+    )
+    const url = `https://wa.me/2462132732?text=${text}`
     window.open(url, "_blank")
   }
 
