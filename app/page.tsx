@@ -10,29 +10,33 @@ export default function Home() {
   const whatsappLink = `https://wa.me/${whatsappNumber}?text=${whatsappMessage}`
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-green-50 to-amber-50">
+    <div className="min-h-screen bg-gradient-to-b from-amber-50 to-amber-100">
       {/* Navbar */}
       <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-sm">
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-2">
-              <Trees className="h-8 w-8 text-green-700" />
-              <span className="text-2xl font-bold text-green-800">Cabaña María María</span>
+              <a href="#inicio">
+                <img src="/logo.jpg" alt="Cabaña María María Logo" className="h-10 w-auto" />
+              </a>
+              <span className="text-2xl font-bold text-amber-800">
+                Cabaña María María
+              </span>
             </div>
             <div className="hidden md:flex items-center gap-6">
-              <a href="#inicio" className="text-green-800 hover:text-green-600 transition-colors">
+              <a href="#inicio" className="text-amber-800 hover:text-amber-600 transition-colors">
                 Inicio
               </a>
-              <a href="#galeria" className="text-green-800 hover:text-green-600 transition-colors">
+              <a href="#galeria" className="text-amber-800 hover:text-amber-600 transition-colors">
                 Galería
               </a>
-              <a href="#servicios" className="text-green-800 hover:text-green-600 transition-colors">
+              <a href="#servicios" className="text-amber-800 hover:text-amber-600 transition-colors">
                 Servicios
               </a>
-              <a href="#contacto" className="text-green-800 hover:text-green-600 transition-colors">
+              <a href="#contacto" className="text-amber-800 hover:text-amber-600 transition-colors">
                 Contacto
               </a>
-              <Button asChild className="bg-green-700 hover:bg-green-800 text-white">
+              <Button asChild className="bg-amber-600 hover:bg-amber-700 text-white">
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                   Reservar
                 </a>
@@ -44,9 +48,9 @@ export default function Home() {
 
       {/* Hero Section */}
       <section id="inicio" className="relative min-h-[600px] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-green-900/80 to-amber-900/80 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-br from-amber-900/80 to-amber-900/80 z-10" />
         <img
-          src="/beautiful-outdoor-garden-venue-with-green-grass-an.jpg"
+          src="/hero.jpg"
           alt="Cabaña María María"
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -69,7 +73,7 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center mb-12">
-            <h2 className="text-4xl font-bold text-green-800 mb-6">Sobre Nosotros</h2>
+            <h2 className="text-4xl font-bold text-amber-800 mb-6">Sobre Nosotros</h2>
             <p className="text-lg text-gray-700 leading-relaxed">
               Cabaña María María es un espacio que nació del amor por celebrar momentos especiales. Antes fuimos un
               restaurante familiar, y ahora nos hemos transformado en el lugar perfecto para tus eventos más
@@ -78,12 +82,12 @@ export default function Home() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="border-green-200 shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-amber-200 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
-                <div className="mx-auto mb-4 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <Trees className="h-8 w-8 text-green-700" />
+                <div className="mx-auto mb-4 w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center">
+                  <Trees className="h-8 w-8 text-amber-700" />
                 </div>
-                <CardTitle className="text-green-800">Ambiente Natural</CardTitle>
+                <CardTitle className="text-amber-800">Ambiente Natural</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-center text-gray-600">
@@ -92,12 +96,12 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-green-200 shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-amber-200 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
                 <div className="mx-auto mb-4 w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center">
                   <Users className="h-8 w-8 text-amber-700" />
                 </div>
-                <CardTitle className="text-green-800">Espacio Amplio</CardTitle>
+                <CardTitle className="text-amber-800">Espacio Amplio</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-center text-gray-600">
@@ -106,12 +110,12 @@ export default function Home() {
               </CardContent>
             </Card>
 
-            <Card className="border-green-200 shadow-lg hover:shadow-xl transition-shadow">
+            <Card className="border-amber-200 shadow-lg hover:shadow-xl transition-shadow">
               <CardHeader className="text-center">
-                <div className="mx-auto mb-4 w-16 h-16 bg-green-100 rounded-full flex items-center justify-center">
-                  <Sparkles className="h-8 w-8 text-green-700" />
+                <div className="mx-auto mb-4 w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center">
+                  <Sparkles className="h-8 w-8 text-amber-700" />
                 </div>
-                <CardTitle className="text-green-800">Atención Personalizada</CardTitle>
+                <CardTitle className="text-amber-800">Atención Personalizada</CardTitle>
               </CardHeader>
               <CardContent>
                 <p className="text-center text-gray-600">
@@ -124,47 +128,47 @@ export default function Home() {
       </section>
 
       {/* Gallery Section */}
-      <section id="galeria" className="py-20 bg-gradient-to-b from-green-50 to-white">
+      <section id="galeria" className="py-20 bg-gradient-to-b from-amber-50 to-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Nuestras Instalaciones</h2>
+          <h2 className="text-4xl font-bold text-amber-800 text-center mb-12">Nuestras Instalaciones</h2>
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4 max-w-6xl mx-auto">
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src="/elegant-event-salon-with-tables-and-chairs.jpg" alt="Salón de eventos" className="w-full h-64 object-cover" />
+              <img src="/salon-principal.jpg" alt="Salón de eventos" className="w-full h-64 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-semibold">Salón Principal</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src="/beautiful-green-garden-with-grass-for-outdoor-even.jpg" alt="Jardín" className="w-full h-64 object-cover" />
+              <img src="/jardin.JPG" alt="Jardín" className="w-full h-64 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-semibold">Jardín</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src="/children-playground-with-swings-and-slides.jpg" alt="Juegos infantiles" className="w-full h-64 object-cover" />
+              <img src="/juegos-infantiles.JPG" alt="Juegos infantiles" className="w-full h-64 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-semibold">Juegos Infantiles</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src="/colorful-inflatable-bounce-house-for-kids-parties.jpg" alt="Inflables" className="w-full h-64 object-cover" />
+              <img src="/inflable.jpg" alt="Inflables" className="w-full h-64 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-semibold">Inflables</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src="/parking-lot-cars.png" alt="Estacionamiento" className="w-full h-64 object-cover" />
+              <img src="/estacionamiento.JPG" alt="Estacionamiento" className="w-full h-64 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-semibold">Estacionamiento</p>
               </div>
             </div>
 
             <div className="relative overflow-hidden rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
-              <img src="/elegant-event-decoration.png" alt="Decoración" className="w-full h-64 object-cover" />
+              <img src="/decoracion.jpg" alt="Decoración" className="w-full h-64 object-cover" />
               <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-4">
                 <p className="text-white font-semibold">Decoración</p>
               </div>
@@ -176,41 +180,41 @@ export default function Home() {
       {/* Pricing Section */}
       <section id="servicios" className="py-20 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-green-800 text-center mb-4">Paquetes y Precios</h2>
+          <h2 className="text-4xl font-bold text-amber-800 text-center mb-4">Paquetes y Precios</h2>
           <p className="text-center text-gray-600 mb-12 text-lg">Elige el paquete perfecto para tu evento</p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="border-2 border-green-200 shadow-xl hover:shadow-2xl transition-shadow">
-              <CardHeader className="bg-gradient-to-br from-green-50 to-amber-50">
-                <CardTitle className="text-2xl text-green-800">Básico</CardTitle>
-                <CardDescription className="text-3xl font-bold text-green-700 mt-2">$3,700</CardDescription>
+            <Card className="border-2 border-amber-200 shadow-xl hover:shadow-2xl transition-shadow">
+              <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
+                <CardTitle className="text-2xl text-amber-800">Básico</CardTitle>
+                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$3,700</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Salón techado</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Jardín amplio</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Juegos infantiles</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Estacionamiento</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Mesas y sillas</span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full bg-green-700 hover:bg-green-800">
+                <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
                   <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                     Reservar ahora
                   </a>
@@ -222,8 +226,8 @@ export default function Home() {
               <div className="absolute -top-4 left-1/2 -translate-x-1/2 bg-amber-500 text-white px-4 py-1 rounded-full text-sm font-semibold">
                 Más Popular
               </div>
-              <CardHeader className="bg-gradient-to-br from-amber-50 to-green-50">
-                <CardTitle className="text-2xl text-green-800">Premium</CardTitle>
+              <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
+                <CardTitle className="text-2xl text-amber-800">Premium</CardTitle>
                 <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$5,500</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
@@ -259,37 +263,37 @@ export default function Home() {
               </CardFooter>
             </Card>
 
-            <Card className="border-2 border-green-200 shadow-xl hover:shadow-2xl transition-shadow">
-              <CardHeader className="bg-gradient-to-br from-green-50 to-amber-50">
-                <CardTitle className="text-2xl text-green-800">Deluxe</CardTitle>
-                <CardDescription className="text-3xl font-bold text-green-700 mt-2">$7,200</CardDescription>
+            <Card className="border-2 border-amber-200 shadow-xl hover:shadow-2xl transition-shadow">
+              <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
+                <CardTitle className="text-2xl text-amber-800">Deluxe</CardTitle>
+                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$7,200</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span className="font-semibold">Todo lo del paquete Premium</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Decoración completa</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Mobiliario premium</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Coordinación del evento</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-600 mt-1">✓</span>
+                    <span className="text-amber-600 mt-1">✓</span>
                     <span>Servicio de meseros</span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
-                <Button asChild className="w-full bg-green-700 hover:bg-green-800">
+                <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
                   <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
                     Reservar ahora
                   </a>
@@ -301,14 +305,14 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section id="contacto" className="py-20 bg-gradient-to-b from-green-50 to-amber-50">
+      <section id="contacto" className="py-20 bg-gradient-to-b from-amber-50 to-amber-100">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-green-800 text-center mb-12">Contáctanos</h2>
+          <h2 className="text-4xl font-bold text-amber-800 text-center mb-12">Contáctanos</h2>
 
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <Card className="shadow-xl">
               <CardHeader>
-                <CardTitle className="text-green-800">Envíanos un mensaje</CardTitle>
+                <CardTitle className="text-amber-800">Envíanos un mensaje</CardTitle>
                 <CardDescription>Te responderemos lo antes posible</CardDescription>
               </CardHeader>
               <CardContent>
@@ -341,7 +345,7 @@ export default function Home() {
                     <Textarea id="message" placeholder="Cuéntanos sobre tu evento..." rows={4} />
                   </div>
 
-                  <Button type="submit" className="w-full bg-green-700 hover:bg-green-800">
+                  <Button type="submit" className="w-full bg-amber-600 hover:bg-amber-700">
                     Enviar mensaje
                   </Button>
                 </form>
@@ -352,11 +356,11 @@ export default function Home() {
               <Card className="shadow-lg">
                 <CardContent className="pt-6">
                   <div className="flex items-start gap-4">
-                    <div className="bg-green-100 p-3 rounded-full">
-                      <MapPin className="h-6 w-6 text-green-700" />
+                    <div className="bg-amber-100 p-3 rounded-full">
+                      <MapPin className="h-6 w-6 text-amber-700" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-green-800 mb-1">Dirección</h3>
+                      <h3 className="font-semibold text-amber-800 mb-1">Dirección</h3>
                       <p className="text-gray-600">
                         Privada El Palmar No. 5<br />
                         La Trinidad Tepehitec, Tlaxcala
@@ -373,8 +377,8 @@ export default function Home() {
                       <Phone className="h-6 w-6 text-amber-700" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-green-800 mb-1">Teléfono</h3>
-                      <a href={`tel:${whatsappNumber}`} className="text-gray-600 hover:text-green-700">
+                      <h3 className="font-semibold text-amber-800 mb-1">Teléfono</h3>
+                      <a href={`tel:${whatsappNumber}`} className="text-gray-600 hover:text-amber-700">
                         (246) 213 2732
                       </a>
                     </div>
@@ -384,17 +388,15 @@ export default function Home() {
 
               <Card className="shadow-lg">
                 <CardContent className="pt-6">
-                  <h3 className="font-semibold text-green-800 mb-3">Ubicación</h3>
+                  <h3 className="font-semibold text-amber-800 mb-3">Ubicación</h3>
                   <div className="aspect-video rounded-lg overflow-hidden">
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3771.8!2d-98.2!3d19.3!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTnCsDE4JzAwLjAiTiA5OMKwMTInMDAuMCJX!5e0!3m2!1ses!2smx!4v1234567890"
-                      width="100%"
-                      height="100%"
-                      style={{ border: 0 }}
-                      allowFullScreen
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                      title="Ubicación de Cabaña María María"
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3765.40665878483!2d-98.25838622452014!3d19.308152344642966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cfd972fa12302d%3A0xe268168bb773c60c!2sCaba%C3%B1a%20Maria%20Maria!5e0!3m2!1ses-419!2smx!4v1762359733111!5m2!1ses-419!2smx" 
+                    width="100%" 
+                    height="100%"
+                    style={{border: 0}}
+                    loading="lazy" 
+                    // referrerpolicy="no-referrer-when-downgrade" 
+                    title="Ubicación de Cabaña María María"
                     />
                   </div>
                 </CardContent>
@@ -405,15 +407,19 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-green-900 text-white py-12">
+      <footer className="bg-amber-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-3 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Trees className="h-8 w-8" />
-                <span className="text-xl font-bold">Cabaña María María</span>
+              <a href="#inicio">
+                <img src="/logo.jpg" alt="Cabaña María María Logo" className="h-10 w-auto" />
+              </a>
+              <span className="text-2xl font-bold ">
+                Cabaña María María
+              </span>
               </div>
-              <p className="text-green-100">
+              <p className="text-amber-100">
                 El lugar perfecto para celebrar tus momentos más especiales en un ambiente natural y acogedor.
               </p>
             </div>
@@ -422,22 +428,22 @@ export default function Home() {
               <h3 className="font-semibold text-lg mb-4">Enlaces Rápidos</h3>
               <ul className="space-y-2">
                 <li>
-                  <a href="#inicio" className="text-green-100 hover:text-white transition-colors">
+                  <a href="#inicio" className="text-amber-100 hover:text-white transition-colors">
                     Inicio
                   </a>
                 </li>
                 <li>
-                  <a href="#galeria" className="text-green-100 hover:text-white transition-colors">
+                  <a href="#galeria" className="text-amber-100 hover:text-white transition-colors">
                     Galería
                   </a>
                 </li>
                 <li>
-                  <a href="#servicios" className="text-green-100 hover:text-white transition-colors">
+                  <a href="#servicios" className="text-amber-100 hover:text-white transition-colors">
                     Servicios
                   </a>
                 </li>
                 <li>
-                  <a href="#contacto" className="text-green-100 hover:text-white transition-colors">
+                  <a href="#contacto" className="text-amber-100 hover:text-white transition-colors">
                     Contacto
                   </a>
                 </li>
@@ -446,7 +452,7 @@ export default function Home() {
 
             <div>
               <h3 className="font-semibold text-lg mb-4">Contacto</h3>
-              <ul className="space-y-2 text-green-100">
+              <ul className="space-y-2 text-amber-100">
                 <li className="flex items-start gap-2">
                   <MapPin className="h-5 w-5 mt-0.5 flex-shrink-0" />
                   <span>Privada El Palmar No. 5, La Trinidad Tepehitec, Tlaxcala</span>
@@ -461,7 +467,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="border-t border-green-800 pt-8 text-center text-green-100">
+          <div className="border-t border-amber-800 pt-8 text-center text-amber-100">
             <p>&copy; 2025 Cabaña María María. Todos los derechos reservados.</p>
           </div>
         </div>
