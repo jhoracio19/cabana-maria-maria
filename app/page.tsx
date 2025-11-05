@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
+import { ContactForm } from "@/components/ContactForm"
 
 export default function Home() {
   const whatsappNumber = "2462132732"
@@ -316,39 +317,7 @@ export default function Home() {
                 <CardDescription>Te responderemos lo antes posible</CardDescription>
               </CardHeader>
               <CardContent>
-                <form className="space-y-4">
-                  <div>
-                    <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
-                      Nombre completo
-                    </label>
-                    <Input id="name" placeholder="Tu nombre" />
-                  </div>
-
-                  <div>
-                    <label htmlFor="event" className="block text-sm font-medium text-gray-700 mb-1">
-                      Tipo de evento
-                    </label>
-                    <Input id="event" placeholder="Boda, XV años, cumpleaños..." />
-                  </div>
-
-                  <div>
-                    <label htmlFor="date" className="block text-sm font-medium text-gray-700 mb-1">
-                      Fecha del evento
-                    </label>
-                    <Input id="date" type="date" />
-                  </div>
-
-                  <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
-                      Mensaje
-                    </label>
-                    <Textarea id="message" placeholder="Cuéntanos sobre tu evento..." rows={4} />
-                  </div>
-
-                  <Button type="submit" className="w-full bg-amber-600 hover:bg-amber-700">
-                    Enviar mensaje
-                  </Button>
-                </form>
+                <ContactForm />
               </CardContent>
             </Card>
 
