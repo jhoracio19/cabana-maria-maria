@@ -188,7 +188,7 @@ export default function Home() {
             <Card className="border-2 border-amber-200 shadow-xl hover:shadow-2xl transition-shadow">
               <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
                 <CardTitle className="text-2xl text-amber-800">Básico</CardTitle>
-                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$3,700</CardDescription>
+                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">Desde $3,700</CardDescription>
                 {/* <CardDescription className="text-3xl font-bold text-amber-700 mt-2">Hasta 50 personas</CardDescription> */}
               </CardHeader>
               <CardContent className="pt-6">
