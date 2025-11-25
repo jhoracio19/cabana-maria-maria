@@ -182,16 +182,21 @@ export default function Home() {
       <section id="servicios" className="py-20 bg-white">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-amber-800 text-center mb-4">Paquetes y Precios</h2>
-          <p className="text-center text-gray-600 mb-12 text-lg">Elige el paquete perfecto para tu evento</p>
+          <p className="text-center text-gray-600 mb-12 text-lg">Elige el paquete perfecto para tu evento (los paquetes pueden tener servicio de banquete)</p>
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             <Card className="border-2 border-amber-200 shadow-xl hover:shadow-2xl transition-shadow">
               <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
                 <CardTitle className="text-2xl text-amber-800">Básico</CardTitle>
                 <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$3,700</CardDescription>
+                {/* <CardDescription className="text-3xl font-bold text-amber-700 mt-2">Hasta 50 personas</CardDescription> */}
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span className="font-semibold">Hasta 50 personas</span>
+                  </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
                     <span>Mesas con mantel blanco</span>
@@ -257,10 +262,15 @@ export default function Home() {
               </div>
               <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
                 <CardTitle className="text-2xl text-amber-800">Premium</CardTitle>
-                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$6,300</CardDescription>
+                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">Desde $6,500</CardDescription>
+                {/* <CardDescription className="text-3xl font-bold text-amber-700 mt-2">Hasta 100 personas</CardDescription> */}
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-3">
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-600 mt-1">✓</span>
+                    <span className="font-semibold">Hasta 100 personas</span>
+                  </li>
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
                     <span className="font-semibold">Todo lo del paquete Básico</span>
@@ -286,37 +296,21 @@ export default function Home() {
 
             <Card className="border-2 border-amber-200 shadow-xl hover:shadow-2xl transition-shadow">
               <CardHeader className="bg-gradient-to-br from-amber-50 to-amber-100">
-                <CardTitle className="text-2xl text-amber-800">Deluxe</CardTitle>
-                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">$7,200</CardDescription>
+                <CardTitle className="text-2xl text-amber-800">Servicio de Banquetes</CardTitle>
+                <CardDescription className="text-3xl font-bold text-amber-700 mt-2">Desde $230 por persona</CardDescription>
               </CardHeader>
               <CardContent className="pt-6">
                 <ul className="space-y-3">
                   <li className="flex items-start gap-2">
                     <span className="text-amber-600 mt-1">✓</span>
-                    <span className="font-semibold">Todo lo del paquete Premium</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Decoración completa</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Mobiliario premium</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Coordinación del evento</span>
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <span className="text-amber-600 mt-1">✓</span>
-                    <span>Servicio de meseros</span>
+                    <span className="font-semibold">Cotiza nuestros menus</span>
                   </li>
                 </ul>
               </CardContent>
               <CardFooter>
                 <Button asChild className="w-full bg-amber-600 hover:bg-amber-700">
                   <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
-                    Reservar ahora
+                    Cotiza ahora
                   </a>
                 </Button>
               </CardFooter>
